@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "yokiyuqian@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "new-version": "lerna version --conventional-commits"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
