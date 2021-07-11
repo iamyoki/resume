@@ -9,7 +9,8 @@
   "author": "yokiyuqian@gmail.com",
   "license": "MIT",
   "scripts": {
-    "new-version": "lerna version --conventional-commits"
+    "new-version": "lerna version --conventional-commits",
+    "start": "yarn workspace server run serve"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
