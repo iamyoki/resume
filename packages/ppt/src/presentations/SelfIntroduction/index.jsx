@@ -1,6 +1,8 @@
 import avatar from 'assets/avatar.jpeg'
 import Center from 'components/Center'
+import useSocket from 'hooks/useSocket'
 import theme from 'presentations/theme'
+import React from 'react'
 import {
   Appear,
   Box,
@@ -16,9 +18,11 @@ import {
   Text,
 } from 'spectacle'
 
-function SelfIntroduction() {
+function Slides() {
+  useSocket()
+
   return (
-    <Deck theme={theme}>
+    <>
       <Slide>
         <Appear>
           <FlexBox justifyContent='flex-start'>
@@ -72,6 +76,14 @@ function SelfIntroduction() {
           <ListItem>产品思维和设计能力</ListItem>
         </OrderedList>
       </Slide>
+    </>
+  )
+}
+
+function SelfIntroduction() {
+  return (
+    <Deck theme={theme}>
+      <Slides />
     </Deck>
   )
 }

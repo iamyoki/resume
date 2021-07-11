@@ -1,8 +1,8 @@
-import React from 'react'
 import { Global } from '@emotion/react'
-import Routes from './Routes'
-import globalCss from './global.css'
+import React from 'react'
 import Providers from './components/Providers'
+import globalCss from './global.css'
+import Routes from './Routes'
 
 function App() {
   return (

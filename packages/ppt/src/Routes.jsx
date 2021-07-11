@@ -12,11 +12,11 @@ import SecondPage from './containers/SecondPage'
 function Routes() {
   return (
     <Router id='router'>
+      <SelfIntroduction path='/' />
       <PageWrapper path='/'>
-        <HomePage path='/' label='Home' />
+        <HomePage path='/home' label='Home' />
         <SecondPage path='second' label='Second' />
         <NotfoundPage default />
-        <SelfIntroduction path='/1' />
       </PageWrapper>
     </Router>
   )
