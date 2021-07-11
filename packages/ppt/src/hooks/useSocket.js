@@ -3,7 +3,11 @@ import { useEffect, useContext, useState } from 'react'
 import { io } from 'socket.io-client'
 import { DeckContext } from 'spectacle'
 
-const socket = io('ws://localhost:5000')
+const socket = io(
+  process.env.NODE_ENV === 'development'
+    ? 'ws://localhost:5000'
+    : 'https://mhj9w.sse.codesandbox.io/'
+)
 
 export default function useSocket() {
   const [key, setKey] = useState()
