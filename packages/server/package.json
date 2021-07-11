@@ -1,7 +1,25 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/app.js",
   "author": "yokiyuqian@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "concurrently 'yarn:build -w' 'nodemon --watch dist dist/app.js'",
+    "serve": "node dist/app.js",
+    "dev": "nodemon --watch src src/app.ts"
+  },
+  "dependencies": {
+    "@koa/router": "^10.0.0",
+    "koa": "^2.13.1"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa__router": "^8.0.7",
+    "@types/node": "^16.3.1",
+    "concurrently": "^6.2.0",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.3.5"
+  }
 }
