@@ -3,7 +3,8 @@ import avatar from 'assets/avatar.jpeg'
 import Center from 'components/Center'
 import useSocket from 'hooks/useSocket'
 import React from 'react'
-import github from 'assets/github.png'
+import reoil from 'assets/Reoil.png'
+import reoil2 from 'assets/Reoil2.png'
 import {
   Appear,
   Box,
@@ -67,7 +68,7 @@ function SelfIntroduction() {
           <Heading lineHeight={1.4}>
             为了各位面试官大佬的体验
             <Appear>请允许我允许花几分钟🙋🏻</Appear>
-            <Appear>通过精心准备的ppt介绍我自己</Appear>
+            <Appear>通过编写的ppt介绍我自己</Appear>
           </Heading>
         </Center>
       </Slide>
@@ -138,6 +139,12 @@ function SelfIntroduction() {
 
       <Slide>
         <Center>
+          <Heading>稍微看一下设计作品。。。</Heading>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
           <Heading>接下来直接讲讲项目吧</Heading>
         </Center>
       </Slide>
@@ -149,6 +156,18 @@ function SelfIntroduction() {
             这是一个原子UI样式库 下一代css in js解决方案 - css in props <br />
             它解决的是样式和逻辑的范式问题 <br />
           </Quote>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Image src={reoil} />
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Image src={reoil2} />
         </Center>
       </Slide>
 
