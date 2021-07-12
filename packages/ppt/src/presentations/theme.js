@@ -9,6 +9,7 @@ export default {
     secondary: '#fc6986',
     tertiary: '#1e2852',
     quaternary: '#ffc951',
+    yellow: '#ffc951',
     quinary: '#8bddfd',
   },
   fonts: {
