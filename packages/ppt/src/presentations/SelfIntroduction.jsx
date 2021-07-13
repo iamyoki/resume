@@ -53,7 +53,7 @@ function SelfIntroduction() {
         </Appear>
 
         <Center>
-          <Heading>于谦的字节跳动面试演示稿👨‍💻‍</Heading>
+          <Heading>于谦的面试演示稿👨‍💻‍</Heading>
         </Center>
 
         <Appear>
