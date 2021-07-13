@@ -17,6 +17,7 @@ import popular from 'assets/popular.png'
 import gotodo from 'assets/gotodo.png'
 import gotodoCli from 'assets/gotodo-cli.png'
 import gotodoCliGif from 'assets/gotodo-cli.gif'
+import tileapp from 'assets/tile-app.png'
 import {
   Appear,
   Box,
@@ -640,6 +641,42 @@ function SelfIntroduction() {
 
       <Slide>
         <Center>
+          <Heading>9. Tile App</Heading>
+          <Image height='30vh' src={tileapp} />
+          <Quote fontSize={30}>React + Typescript + Electron</Quote>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Heading>10. 疫情实况</Heading>
+          <Quote fontSize={30}>React + Electron</Quote>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Heading>11. 贵州省统计局</Heading>
+          <Quote fontSize={30}>请看演示</Quote>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Heading>12. 罗湖一企一策</Heading>
+          <Quote fontSize={30}>请看演示</Quote>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Heading>13. 经济大脑</Heading>
+          <Quote fontSize={30}>请看演示</Quote>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
           <Heading fontSize='h3' margin={0}>
             BTW: 这个ppt也是用代码写的
           </Heading>
@@ -678,6 +715,12 @@ function SelfIntroduction() {
               https://bytedance.vercel.app/
             </Link>
           </FlexBox>
+        </Center>
+      </Slide>
+
+      <Slide>
+        <Center>
+          <Heading>🎉感谢大家耐心观看</Heading>
         </Center>
       </Slide>
     </>
